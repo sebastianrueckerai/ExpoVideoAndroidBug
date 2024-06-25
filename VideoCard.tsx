@@ -13,18 +13,16 @@ const VideoCard = () => {
   return (
     <VideoView
       ref={video}
-      style={styles.videoThumb}
+      style={styles.video}
       player={player}
-      contentFit={"cover"}
       nativeControls
     ></VideoView>
   );
 };
 const styles = StyleSheet.create({
-  videoThumb: {
-    width: "100%",
-    justifyContent: "center",
-    flexDirection: "column",
+  video: {
+    flex: 1,
+    alignSelf: "stretch",
   },
 });
 
